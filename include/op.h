@@ -7,17 +7,28 @@
 /* repeat-cols -> recorrer cada columna de una matriz */
 #define repeatc(matrixid) for(j = 0; j != getcols(matrixid); ++j)
 
-typedef enum 
+enum __ID_MATRIX
 {
 	/* Las ID de las matrices comienzan desde 0 */
 	MA, 		/* matriz A  - ID: 0 */
 	MB, 		/* matriz B - ID: 1 */
-	ADD, 		/* suma */
-	SUBTRACT, 	/* resta */
-}_option;
+};
+
+enum __OPTIONS
+{
+	ADD = '1',  /* Opción sumar */
+	SUB,		/* Opción restar (subtract) */
+	MULTI,		/* Opción multiplicar */
+	MD,			/* Opción sumar diagonal principal (Main Diagonal) */
+	RD,			/* Opción sumar diagonal inversa (Reverse Diagonal) */
+	EDGE,		/* Opción sumar bordes */
+	WAY_T,		/* Opción sumar en forma de T */
+	EXIT_		/* Opción salir del programa */
+	
+};
 
 /* Add-Subtract matrix (suma y resta entre matrices) */
-void as_Matrix(const _option option)
+void as_Matrix(const uint8_t option)
 {
 	puts("\n\n");
 	puts(option == ADD ? "Matriz A+B:\n" : "Matriz A-B:\n");
@@ -159,4 +170,4 @@ void Add_WayT(void)
 	}
 }
 
-#endif
+#endif /* _OP_H */

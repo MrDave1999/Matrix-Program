@@ -1,7 +1,7 @@
 #define MAX_MATRIX	(2)
 #include <mDynamic.h>
 #include <pscanf.h>
-#include <random.h>
+//#include <random.h>
 #include <assertx.h>
 #include "include/op.h"
 #include "include/dataentry.h"

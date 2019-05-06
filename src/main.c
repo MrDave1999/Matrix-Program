@@ -32,7 +32,7 @@ int main(void)
 		dataread("%c", &option, "Ingrese una opcion <0-8>");
 		assertc(option >= '0' && option <= '8', "\nError: Ingrese una opcion valida.\n")
 		if((act == ENABLE) && (option >= '1' && option <= '7'))
-		{
+		{ 
 			error(DataEntry, option);
 		}
 		else if((option != '0' && option != '8') && (!DetectRules(option)))

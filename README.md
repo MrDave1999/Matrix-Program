@@ -21,7 +21,7 @@ Se necesita añadir en la carpeta `include` (se encuentra donde se instaló el c
 - [pscanf.h](https://github.com/MrDave1999/pscanf.h)
 - [assertx.h](https://github.com/MrDave1999/assertx.h)
 
-De esto depende de que se pueda compilar o no.
+De esto depende que se pueda compilar el programa de forma éxitosa, sin errores de sintaxis producidas por el compilador.
 
 # Créditos
 
